@@ -57,7 +57,11 @@ function SkillIcon({ name }: { name: string }) {
     // Programming
     case "c": return <SiC {...iconProps} className={`${iconProps.className} text-[var(--text-muted)]`} style={{}} />;
     case "c++": return <SiCplusplus {...iconProps} style={{ color: "#00599C" }} />;
-    case "python": return <SiPython {...iconProps} style={{ color: "#3776AB" }} />;
+    case "python": 
+    case "pandas":
+    case "matplotlib":
+    case "numpy":
+      return <SiPython {...iconProps} style={{ color: "#3776AB" }} />;
     case "bash scripting": return <SiGnubash {...iconProps} style={{ color: "#4EAA25" }} />;
 
     // OS

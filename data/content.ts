@@ -76,7 +76,7 @@ export const SKILLS: SkillGroup[] = [
   {
     category: "Programming",
     icon: "💻",
-    skills: ["C", "C++", "Python", "Bash Scripting"],
+    skills: ["C", "C++", "Python", "Bash Scripting", "Pandas", "Matplotlib", "NumPy"],
   },
   {
     category: "Operating Systems",
