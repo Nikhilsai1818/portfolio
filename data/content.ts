@@ -71,7 +71,7 @@ export const SKILLS: SkillGroup[] = [
   {
     category: "Security Tools",
     icon: "🔧",
-    skills: ["Wireshark", "Nmap", "Burp Suite", "Cisco Packet Tracer", "TryHackMe", "Lynis", "Fail2Ban", "rkhunter", "FTK Imager", "Autopsy"],
+    skills: ["Wireshark", "Nmap", "Burp Suite", "Cisco Packet Tracer", "TryHackMe", "Lynis", "Fail2Ban", "rkhunter", "FTK Imager", "Autopsy", "Splunk", "SPL"],
   },
   {
     category: "Programming",
