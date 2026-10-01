@@ -73,6 +73,7 @@ function SkillIcon({ name }: { name: string }) {
     case "git": return <SiGit {...iconProps} style={{ color: "#F05032" }} />;
     case "autocad": return <MdOutlineDesignServices {...iconProps} />;
     case "aws": return <FaAws {...iconProps} className={`${iconProps.className} text-[var(--text-primary)]`} style={{}} />;
+    case "postgresql":
     case "oracle cloud": return <FaDatabase {...iconProps} style={{ color: "#F80000" }} />;
     case "aes-256":
     case "rsa":

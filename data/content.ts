@@ -86,7 +86,7 @@ export const SKILLS: SkillGroup[] = [
   {
     category: "Web & Database",
     icon: "🗄️",
-    skills: ["HTML", "CSS", "MySQL"],
+    skills: ["HTML", "CSS", "MySQL", "PostgreSQL"],
   },
   {
     category: "Dev Tools",
