@@ -1,0 +1,287 @@
+@import "tailwindcss";
+
+/* ══════════════════════════════════════════════════════
+   LOKI DARK THEME  (default)
+══════════════════════════════════════════════════════ */
+:root,
+html[data-variant="loki"][data-theme="dark"],
+html[data-theme="dark"]:not([data-variant="thor"]) {
+  /* ── Backgrounds ── */
+  --navy:        #080d08;
+  --navy-light:  #0d160d;
+  --surface:     #111a11;
+
+  /* ── Loki gold ── */
+  --electric:      #c9a84c;
+  --electric-dark: #8a6f28;
+
+  /* ── Asgardian green ── */
+  --cyber-green:  #3db554;
+
+  /* ── Sorcery purple ── */
+  --cyber-purple: #6b3fa0;
+
+  /* ── Loki forest green ── */
+  --loki-green:        #1e4d24;
+  --loki-green-bright: #2d7a3a;
+
+  --border-subtle: rgba(201, 168, 76, 0.10);
+
+  /* ── Text tokens ── */
+  --text-primary:   rgba(255, 255, 255, 1);
+  --text-secondary: rgba(255, 255, 255, 0.85);
+  --text-muted:     rgba(255, 255, 255, 0.60);
+  --text-faint:     rgba(255, 255, 255, 0.35);
+  --text-glow:      0 0 10px rgba(0, 0, 0, 0.8), 0 1px 3px rgba(0, 0, 0, 1);
+
+  /* ── Card / surface ── */
+  --card-bg:           rgba(255, 255, 255, 0.03);
+  --card-border:       rgba(255, 255, 255, 0.08);
+  --card-border-hover: rgba(255, 255, 255, 0.20);
+
+  /* ── Navbar ── */
+  --navbar-bg:     rgba(8, 13, 8, 0.82);
+  --navbar-border: rgba(255, 255, 255, 0.08);
+}
+
+/* ══════════════════════════════════════════════════════
+   LOKI LIGHT THEME  (parchment & rich gold)
+══════════════════════════════════════════════════════ */
+html[data-variant="loki"][data-theme="light"],
+html[data-theme="light"]:not([data-variant="thor"]) {
+  /* ── Backgrounds — aged parchment ── */
+  --navy:        #f0ebe0;
+  --navy-light:  #e8e2d4;
+  --surface:     #e2dbc9;
+
+  /* ── Loki gold — deeper on light backgrounds ── */
+  --electric:      #7a5c10;
+  --electric-dark: #4e3a08;
+
+  /* ── Forest green ── */
+  --cyber-green:  #1a5e28;
+
+  /* ── Deep amethyst ── */
+  --cyber-purple: #3d1f6e;
+
+  /* ── Loki green ── */
+  --loki-green:        #1a4020;
+  --loki-green-bright: #1e5c28;
+
+  --border-subtle: rgba(100, 75, 20, 0.18);
+
+  /* ── Text tokens — DARK, high-contrast on parchment ── */
+  --text-primary:   rgba(0, 0, 0, 1);
+  --text-secondary: rgba(10, 5, 0, 0.90);
+  --text-muted:     rgba(10, 5, 0, 0.70);
+  --text-faint:     rgba(10, 5, 0, 0.45);
+  --text-glow:      0 0 10px rgba(255, 255, 255, 0.9), 0 1px 4px rgba(255, 255, 255, 1);
+
+  /* ── Card / surface ── */
+  --card-bg:           rgba(0, 0, 0, 0.04);
+  --card-border:       rgba(0, 0, 0, 0.12);
+  --card-border-hover: rgba(0, 0, 0, 0.28);
+
+  /* ── Navbar ── */
+  --navbar-bg:     rgba(240, 235, 224, 0.90);
+  --navbar-border: rgba(0, 0, 0, 0.10);
+}
+
+/* ══════════════════════════════════════════════════════
+   THOR DARK THEME  (Stormy skies & Lightning)
+══════════════════════════════════════════════════════ */
+html[data-variant="thor"][data-theme="dark"] {
+  /* ── Backgrounds ── */
+  --navy:        #0b0c10;
+  --navy-light:  #12141a;
+  --surface:     #1a1c23;
+
+  /* ── Thor lightning ── */
+  --electric:      #00d2ff;
+  --electric-dark: #0088aa;
+
+  /* ── Cape red ── */
+  --cyber-green:  #ff3333;
+
+  /* ── Armor silver ── */
+  --cyber-purple: #c5c6c7;
+
+  /* ── Stormy blue ── */
+  --loki-green:        #45a29e;
+  --loki-green-bright: #66fcf1;
+
+  --border-subtle: rgba(0, 210, 255, 0.10);
+
+  /* ── Text tokens ── */
+  --text-primary:   rgba(255, 255, 255, 1);
+  --text-secondary: rgba(255, 255, 255, 0.90);
+  --text-muted:     rgba(255, 255, 255, 0.65);
+  --text-faint:     rgba(255, 255, 255, 0.35);
+  --text-glow:      0 0 10px rgba(0, 210, 255, 0.4), 0 2px 5px rgba(0, 0, 0, 0.9);
+
+  /* ── Card / surface ── */
+  --card-bg:           rgba(255, 255, 255, 0.03);
+  --card-border:       rgba(255, 255, 255, 0.08);
+  --card-border-hover: rgba(255, 255, 255, 0.20);
+
+  /* ── Navbar ── */
+  --navbar-bg:     rgba(11, 12, 16, 0.82);
+  --navbar-border: rgba(255, 255, 255, 0.08);
+}
+
+/* ══════════════════════════════════════════════════════
+   THOR LIGHT THEME  (Asgardian daytime & Sky blue)
+══════════════════════════════════════════════════════ */
+html[data-variant="thor"][data-theme="light"] {
+  /* ── Backgrounds ── */
+  --navy:        #f0f4f8;
+  --navy-light:  #e2e8f0;
+  --surface:     #cbd5e1;
+
+  /* ── Thor lightning ── */
+  --electric:      #0284c7;
+  --electric-dark: #0369a1;
+
+  /* ── Cape red ── */
+  --cyber-green:  #dc2626;
+
+  /* ── Armor slate ── */
+  --cyber-purple: #475569;
+
+  /* ── Sky blue ── */
+  --loki-green:        #0ea5e9;
+  --loki-green-bright: #38bdf8;
+
+  --border-subtle: rgba(2, 132, 199, 0.18);
+
+  /* ── Text tokens ── */
+  --text-primary:   rgba(0, 0, 0, 1);
+  --text-secondary: rgba(15, 23, 42, 0.90);
+  --text-muted:     rgba(30, 41, 59, 0.70);
+  --text-faint:     rgba(51, 65, 85, 0.45);
+  --text-glow:      0 0 12px rgba(255, 255, 255, 1), 0 2px 6px rgba(255, 255, 255, 1);
+
+  /* ── Card / surface ── */
+  --card-bg:           rgba(0, 0, 0, 0.04);
+  --card-border:       rgba(0, 0, 0, 0.12);
+  --card-border-hover: rgba(0, 0, 0, 0.28);
+
+  /* ── Navbar ── */
+  --navbar-bg:     rgba(240, 244, 248, 0.90);
+  --navbar-border: rgba(0, 0, 0, 0.10);
+}
+
+/* ══════════════════════════════════════════════════════
+   BASE RESET & BODY
+══════════════════════════════════════════════════════ */
+*,
+*::before,
+*::after { box-sizing: border-box; }
+
+html { 
+  scroll-behavior: smooth; 
+  font-size: 110%; /* Increase base font size everywhere */
+}
+
+body {
+  background-color: var(--navy);
+  color: var(--text-primary);
+  text-shadow: var(--text-glow, none);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  overflow-x: hidden;
+  transition: background-color 0.35s ease, color 0.35s ease, text-shadow 0.35s ease;
+}
+
+/* ══════════════════════════════════════════════════════
+   SCROLLBAR
+══════════════════════════════════════════════════════ */
+::-webkit-scrollbar        { width: 4px; }
+::-webkit-scrollbar-track  { background: var(--navy); }
+::-webkit-scrollbar-thumb  { background: rgba(201, 168, 76, 0.30); border-radius: 2px; }
+::-webkit-scrollbar-thumb:hover { background: rgba(201, 168, 76, 0.55); }
+
+/* ══════════════════════════════════════════════════════
+   FOCUS
+══════════════════════════════════════════════════════ */
+:focus-visible {
+  outline: 2px solid var(--electric);
+  outline-offset: 2px;
+}
+
+/* ══════════════════════════════════════════════════════
+   TAILWIND THEME TOKENS
+══════════════════════════════════════════════════════ */
+@theme inline {
+  --color-navy:              var(--navy);
+  --color-navy-light:        var(--navy-light);
+  --color-surface:           var(--surface);
+  --color-electric:          var(--electric);
+  --color-electric-dark:     var(--electric-dark);
+  --color-cyber-green:       var(--cyber-green);
+  --color-cyber-purple:      var(--cyber-purple);
+  --color-loki-green:        var(--loki-green);
+  --color-loki-green-bright: var(--loki-green-bright);
+  --font-sans: var(--font-space-grotesk);
+  --font-mono: var(--font-jetbrains-mono);
+}
+
+/* ══════════════════════════════════════════════════════
+   SELECTION
+══════════════════════════════════════════════════════ */
+::selection {
+  background: rgba(201, 168, 76, 0.28);
+  color: var(--text-primary);
+}
+
+/* ══════════════════════════════════════════════════════
+   SECTION BACKGROUNDS — opaque tint over 3D canvas
+══════════════════════════════════════════════════════ */
+main > section {
+  position: relative;
+}
+
+/* Dark: deep forest tint */
+:root main > section,
+html[data-variant="loki"][data-theme="dark"] main > section,
+html[data-theme="dark"]:not([data-variant="thor"]) main > section {
+  background: rgba(8, 13, 8, 0.72);
+}
+
+/* Light: warm parchment tint */
+html[data-variant="loki"][data-theme="light"] main > section,
+html[data-theme="light"]:not([data-variant="thor"]) main > section {
+  background: rgba(240, 235, 224, 0.88);
+}
+
+/* Thor Dark: Stormy tint */
+html[data-variant="thor"][data-theme="dark"] main > section {
+  background: rgba(11, 12, 16, 0.72);
+}
+
+/* Thor Light: Sky tint */
+html[data-variant="thor"][data-theme="light"] main > section {
+  background: rgba(240, 244, 248, 0.88);
+}
+
+/* Footer background */
+:root footer,
+html[data-variant="loki"][data-theme="dark"] footer,
+html[data-theme="dark"]:not([data-variant="thor"]) footer { background: rgba(6, 10, 6, 0.85); }
+html[data-variant="loki"][data-theme="light"] footer,
+html[data-theme="light"]:not([data-variant="thor"]) footer { background: rgba(232, 226, 212, 0.92); }
+html[data-variant="thor"][data-theme="dark"] footer { background: rgba(9, 10, 14, 0.85); }
+html[data-variant="thor"][data-theme="light"] footer { background: rgba(226, 232, 240, 0.92); }
+
+
+/* ══════════════════════════════════════════════════════
+   REDUCE MOTION
+══════════════════════════════════════════════════════ */
+@media (prefers-reduced-motion: reduce) {
+  *, *::before, *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}
+
